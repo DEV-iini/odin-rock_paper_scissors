@@ -1,9 +1,11 @@
 const choice = ["Rock", "Paper", "Scissor"];
-let player = getHumanChoice(choice);
-let computer = getComputerChoice(choice);
+const rounds = 5;
+let player;
+let computer;
 let humanScore = 0;
 let computerScore = 0;
 
+playGame();
 
 // Get user choice
 function getHumanChoice(choices) {
@@ -20,6 +22,9 @@ function getComputerChoice(choices) {
 }
 // See which one won
 function playRound(player, computer) {
+    player = getHumanChoice(choice);
+    computer = getComputerChoice(choice);
+    
     // Rock
     if (player === "Rock" && computer === "Rock") {
         console.log("DRAW!");
@@ -61,3 +66,15 @@ function playRound(player, computer) {
 }
 
 // play 5 times
+function playGame(rounds) {
+    for (let i = 0; i < 5; i++) {
+        playRound(player, computer);
+    }
+
+    if (humanScore > computerScore) {
+        console.log("Player won by " + humanScore + " X " + computerScore);
+    }
+    else {
+        console.log("Computer won by " + computerScore + " X " + humanScore);
+    }
+}

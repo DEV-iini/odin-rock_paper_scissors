@@ -1,3 +1,4 @@
+/*
 const choice = ["Rock", "Paper", "Scissor"];
 const rounds = 5;
 let player;
@@ -8,6 +9,7 @@ let computerScore = 0;
 playGame();
 
 // Get user choice
+
 function getHumanChoice(choices) {
     let human;
     do {
@@ -78,3 +80,5 @@ function playGame(rounds) {
         console.log("Computer won by " + computerScore + " X " + humanScore);
     }
 }
+
+*/

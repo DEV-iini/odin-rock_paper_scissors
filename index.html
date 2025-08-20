@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <h1>Rock, Paper Scissor!</h1>
+
+    <div id="score">
+        <h2>Scores</h2>
+
+        <div id="score_container">
+            <div class="score_box">
+            <span>Player</span>
+            <span id="player_score">0</span>
+            </div>
+
+            <div class="score_box">
+            <span>Computer</span>
+            <span id="computer_score">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="rps_buttom">
+        <button id="rock">
+            <div class="button_content">            
+                <img src="" alt="">
+                <span>ROCK</span>
+            </div>
+        </button>
+
+        <button id="paper">
+            <div class="button_content">            
+                <img src="" alt="">
+                <span>PAPER</span>
+            </div>
+        </button>
+
+        <button id="scissor">
+            <div class="button_content">            
+                <img src="" alt="">
+                <span>SCISSOR</span>
+            </div>
+        </button>
+    </div>
+
+    <div id="turn_result">
+        
+    </div>
     <script src="javascript.js"></script>
 </body>
 </html>
